@@ -223,6 +223,7 @@ hr {
 
 .section--devices {
 	padding-bottom: 0;
+	margin-bottom: 40px;
 
 	background: url(../img/devices-bg.jpg) center no-repeat;
 	-webkit-background-size: cover;
@@ -404,4 +405,81 @@ hr {
 	bottom: -80px;
 	right: 0;
 	z-index: 1;
+}
+
+/* WEDO */
+.wedo {
+	display: flex;
+}
+
+.wedo-item {
+	width: 50%;
+}
+
+/* ACCORDION */
+.accordion-item {
+	margin-bottom: 10px;
+
+	border: 1px solid #e5e5e5;
+}
+.accordion-item.active .accordion-contant{
+	display: block;
+}
+
+.accordion-item.active .accordion-header {
+	border-bottom-color: #e5e5e5;
+}
+.accordion-item.active .accordion-header::after {
+	transform: translateY(-50%) rotate(-45deg);
+}
+
+.accordion-header {
+	padding: 15px 20px 15px 65px;
+	margin-top: 5px;
+	position: relative;
+
+	border-bottom: 1px solid transparent;
+
+	cursor: pointer;
+}
+.accordion-header::after {
+	content: "";
+	display: block;
+	width: 22px;
+	height: 22px;
+
+	border-top: 2px solid #ccc;
+	border-right: 2px solid #ccc;
+
+	position: absolute;
+	top: 50%;
+	right: 20px;
+	z-index: 1;
+
+	transform: translateY(-50%) rotate(135deg);
+}
+
+.accordion-icon {
+	position: absolute;
+	top: 50%;
+	left: 20px;
+	z-index: 1;
+
+	transform: translateY(-50%);
+}
+
+.accordion-title {
+	font-size: 14px;
+	text-transform: uppercase;
+	color: #333;
+}
+
+.accordion-contant {
+	padding: 15px 20px;
+	display: none;
+	
+	font-size: 15px;
+	font-style: italic;
+	font-weight: 300;
+	color: #999;
 }
