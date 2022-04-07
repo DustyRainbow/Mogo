@@ -27,13 +27,13 @@
 	<header class="header" id="header">
 		<div class="container">
 			<div class="header-iner">
-				<div class="header-logo">MoGo</div>
-				<nav class="nav">
-					<a class="nav-link active" href="#">About</a>
-					<a class="nav-link" href="#">Service</a>
-					<a class="nav-link" href="#">Work</a>
-					<a class="nav-link" href="#">Block</a>
-					<a class="nav-link" href="#">Contact</a>
+				<div class="header-logo" data-scroll="#intro">MoGo</div>
+				<nav class="nav" id="nav">
+					<a class="nav-link" href="#" data-scroll="#about">About</a>
+					<a class="nav-link" href="#" data-scroll="#service">Service</a>
+					<a class="nav-link" href="#" data-scroll="#work">Work</a>
+					<a class="nav-link" href="#" data-scroll="#blog">Blog</a>
+					<a class="nav-link" href="#" data-scroll="#footer">Contact</a>
 					<a class="nav-link" href="#">
 						<i class="fa-solid fa-cart-shopping"></i>
 					</a>
@@ -42,7 +42,7 @@
 					</a>
 				</nav>
 
-				<button class="nav-toggle" type="button">
+				<button class="nav-toggle" id="nav-toggle" type="button">
 					<span class="nav-toggle-item">
 						MENU
 					</span>
@@ -90,7 +90,7 @@
 		</div>
 
 		<!-- ABOUT US -->
-		<section class="section">
+		<section class="section" id="about">
 			<div class="container">
 				<div class="section-header">
 					<h3 class="section-suptitle">What we do</h3>
@@ -166,7 +166,7 @@
 		</div>
 
 		<!-- SERVICE -->
-		<section class="section">
+		<section class="section" id="service">
 			<div class="container">
 				<div class="section-header">
 					<h3 class="section-suptitle">We work with</h3>
@@ -229,7 +229,7 @@
 		</section>
 
 
-		<!-- SERVICE -->
+		<!-- WEDO -->
 		<section class="section">
 			<div class="container">
 				<div class="section-header">
@@ -241,7 +241,7 @@
 							tempora ullam mollitia!</p>
 					</div>
 				</div>
-				<!-- WEDO -->
+
 				<div class="wedo">
 					<div class="wedo-item">
 						<img class="wedo-img" src="../Training2/img/wedo.jpg" alt="">
@@ -292,7 +292,7 @@
 				</div>
 		</section>
 
-		<!-- REVIEWS Gray -->
+		<!-- REVIEWS 1 -->
 		<div class="section section--gray">
 			<div class="container">
 				<div class="reviews">
@@ -428,8 +428,8 @@
 			</div>
 		</div>
 
-		<!-- WORKS -->
-		<section class="section">
+		<!-- WORK -->
+		<section class="section" id="work">
 			<div class="container">
 				<div class="section-header">
 					<h3 class="section-suptitle">What we do</h3>
@@ -505,7 +505,7 @@
 			</div>
 		</section>
 
-		<!-- REVIEWS2 -->
+		<!-- REVIEWS 2 -->
 		<div class="section">
 			<div class="container">
 				<div class="reviews">
@@ -576,7 +576,7 @@
 		</section>
 
 		<!-- BLOG -->
-		<section class="section">
+		<section class="section" id="blog">
 			<div class="container">
 				<div class="section-header">
 					<h3 class="section-suptitle">Our stories</h3>
@@ -701,7 +701,7 @@
 		</section>
 
 		<!-- FOOTER -->
-		<footer class="footer">
+		<footer class="footer" id="footer">
 			<div class="container">
 				<div class="footer-inner">
 					<div class="footer-col footer-col--first">
