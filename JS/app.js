@@ -44,4 +44,23 @@ $(function () {
 		$(this).toggleClass("active");
 		$("#nav").toggleClass("active");
 	});
+
+	// ACCORDEON Collaps
+	$("[data-collapse]").on("click", function() {
+		event.preventDefault();
+
+		let $this = $(this);
+		let blockId = $this.data('collapse');
+
+		$this.toggleClass("active");
+	});
+
+	// SLIDER
+	$('[data-slider]').slick({
+		infinity: true,
+		fade: false,
+		slidesToShow: 1,
+  	slidesToScroll: 1
+
+	});
 });

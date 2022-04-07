@@ -14,9 +14,10 @@
 		href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:ital,wght@0,400;0,700;1,300&display=swap"
 		rel="stylesheet">
 
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+	<!-- SLIDER Style -->
 
 	<script src="https://kit.fontawesome.com/66bc237b00.js" crossorigin="anonymous"></script>
-
 
 	<title>Mogo</title>
 
@@ -248,13 +249,13 @@
 					</div>
 					<div class="wedo-item">
 						<div class="accordion">
-							<div class="accordion-item">
+							<div class="accordion-item" data-collapse="#wedo-1">
 								<div class="accordion-header">
 									<div class="accordion-title">Photography</div>
 									<img class="accordion-icon" src="../Training2/img/services/photography.png" alt="">
 								</div>
 								<!-- ACCORDION -->
-								<div class="accordion-contant">
+								<div class="accordion-contant" id="wedo-1">
 									<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe dolore recusandae, praesentium
 										consequuntur quaerat laudantium molestias, eveniet sunt nulla itaque suscipit voluptas nostrum
 										accusamus at aliquid repellendus veritatis. Iusto, illum.
@@ -262,12 +263,12 @@
 								</div>
 							</div>
 
-							<div class="accordion-item active">
+							<div class="accordion-item" data-collapse="#wedo-2">
 								<div class="accordion-header">
 									<div class="accordion-title">Creativity</div>
 									<img class="accordion-icon" src="../Training2/img/services/creativity.png" alt="">
 								</div>
-								<div class="accordion-contant">
+								<div class="accordion-contant" id="wedo-2">
 									<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe dolore recusandae, praesentium
 										consequuntur quaerat laudantium molestias, eveniet sunt nulla itaque suscipit voluptas nostrum
 										accusamus at aliquid repellendus veritatis. Iusto, illum.
@@ -275,12 +276,12 @@
 								</div>
 							</div>
 
-							<div class="accordion-item">
+							<div class="accordion-item" data-collapse="#wedo-3">
 								<div class="accordion-header">
 									<div class="accordion-title">Web Design</div>
 									<img class="accordion-icon" src="../Training2/img/services/webdesign.png" alt="">
 								</div>
-								<div class="accordion-contant">
+								<div class="accordion-contant" id="wedo-3">
 									<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe dolore recusandae, praesentium
 										consequuntur quaerat laudantium molestias, eveniet sunt nulla itaque suscipit voluptas nostrum
 										accusamus at aliquid repellendus veritatis. Iusto, illum.
@@ -296,15 +297,31 @@
 		<div class="section section--gray">
 			<div class="container">
 				<div class="reviews">
-					<a class="reviews-btn btn--pref">pref</a>
-					<a class="reviews-btn btn--next">next</a>
-					<div class="reviews-item">
-						<img class="reviews-photo" src=".//img/avatar.png" alt="">
-						<div class="reviews-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores tenetur at
-							explicabo nulla possimus rem a? Quas praesentium quasi labore voluptas recusandae nemo quo, accusamus
-							error
-							expedita, eaque, dolore dicta.</div>
-						<div class="reviews-autor">Jon Doe</div>
+
+
+					<div data-slider>
+						<div>
+							<div class="reviews-item">
+								<img class="reviews-photo" src=".//img/avatar.png" alt="">
+								<div class="reviews-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores tenetur
+									at
+									explicabo nulla possimus rem a? Quas praesentium quasi labore voluptas recusandae nemo quo, accusamus
+									error expedita, eaque, dolore dicta.
+								</div>
+								<div class="reviews-autor">Jon Doe</div>
+							</div>
+						</div>
+
+						<div>
+							<div class="reviews-item">
+								<img class="reviews-photo" src=".//img/avatar.png" alt="">
+								<div class="reviews-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores tenetur
+									at
+									explicabo nulla possimus rem a?
+								</div>
+								<div class="reviews-autor">Doe Jon</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -509,15 +526,25 @@
 		<div class="section">
 			<div class="container">
 				<div class="reviews">
-					<a class="reviews-btn btn--pref">pref</a>
-					<a class="reviews-btn btn--next">next</a>
-					<div class="reviews-item">
-						<img class="reviews-photo" src=".//img/avatar.png" alt="">
-						<div class="reviews-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores tenetur at
-							explicabo nulla possimus rem a? Quas praesentium quasi labore voluptas recusandae nemo quo, accusamus
-							error
-							expedita, eaque, dolore dicta.</div>
-						<div class="reviews-autor">Jon Doe</div>
+					<div data-slider>
+						<div>
+							<div class="reviews-item">
+								<img class="reviews-photo" src=".//img/avatar.png" alt="">
+								<div class="reviews-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores tenetur
+									at explicabo nulla possimus rem a? Quas praesentium quasi labore voluptas recusandae nemo quo, accusamus error expedita, eaque, dolore dicta.</div>
+								<div class="reviews-autor">Jon Doe</div>
+							</div>
+						</div>
+
+						<div>
+							<div class="reviews-item">
+								<img class="reviews-photo" src=".//img/avatar.png" alt="">
+								<div class="reviews-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores tenetur
+									at explicabo nulla possimus rem a?
+									expedita, eaque, dolore dicta.</div>
+								<div class="reviews-autor"> Doe Jon</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -827,8 +854,10 @@
 
 	</div> <!-- /PAGE -->
 
-	<!-- CDN Jquery -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> <!-- CDN Jquery -->
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+	<!-- SLICK JS -->
 	<script src="../Training2/JS/app.js"></script>
 
 </body>
